@@ -19,6 +19,8 @@
             <h1>Just Sayin'</h1>
             
             <p style="margin-top:40px;">Just Wanted to tell you...</p>
+            
+            <button onclick="alertUser()" class="btn btn-primary">What did you want to tell me?<br/>TELLL ME NOW!!!</button>
         
         </div>
         
@@ -28,16 +30,26 @@
     
     <script>
     
-        //remember to use our \ (escape character)
-        alert('I just wanted to say "You\'re a beautiful unicorn!!!" but first I need to know your name');
+        var counter = 0;
         
-        //get our variables using prompt!
-        var firstName = prompt("First name?");
-        var lastName = prompt("Last Name");
-        
-        //combie our variables with a string
-        alert("Hey "+firstName+" "+lastName+" you're a beatuiful unicorn!!");
-        
+        function alertUser()
+        {
+            //remember to use our \ (escape character)
+            alert('I just wanted to say "You\'re a beautiful unicorn!!!" but first I need to know your name');
+            
+            //get our variables using prompt!
+            var firstName = prompt("First name?");
+            var lastName = prompt("Last Name");
+            
+            //combie our variables with a string
+            alert("Hey "+firstName+" "+lastName+" you're a beatuiful unicorn!!");
+            
+            counter++;
+            
+            alert("And, there are lots of other unicorns out there! "+counter+" other unicorns have been on this page so far.");
+            
+        }
+
     </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
