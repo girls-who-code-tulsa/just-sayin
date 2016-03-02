@@ -12,30 +12,51 @@
 
 <body>
 
+    <!---------------------------->
+    <!-- MAIN HTML CONTENT ------->
+    <!---------------------------->
+
     <div class="container" style="text-align:center; padding:100px;">
-        
+
         <div class="jumbotron">
-            
+
             <h1>Just Sayin'</h1>
-            
+
             <p style="margin-top:40px;">Just Wanted to tell you...</p>
-        
+
+            <button class="wow bounceInUp btn btn-primary" data-toggle="tooltip" title="click me!" onclick="mainAlert()">Tell me!</button>
+
         </div>
-        
+
         <p>App By Sabrina Gelbart</p>
-        
+
     </div>
     
-    <script>
-        alert("You're a beautiful unicorn!");
-    </script>
+    <!----------------------->
+    <!-- EXTERNAL SCRIPTS --->
+    <!----------------------->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="lib/animate.css">
+    <script src="lib/wow.js"></script>
     
+    <!--------------------------->
+    <!-- SCRIPTS FOR THIS PAGE -->
+    <!--------------------------->
+
+    <script>
+        alert("sup?");
+        
+        new WOW().init();
+    </script>
+    
+
+
 </body>
 
 </html>
